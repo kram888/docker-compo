@@ -1,0 +1,11 @@
+version: '3'
+services:
+   server:
+     build:
+       context: /mnt/d/docker-compo
+     image: apache:1.0
+     ports:
+     - "80:80"
+     volumes:
+     - "/mnt/data://var/www/html"
+
